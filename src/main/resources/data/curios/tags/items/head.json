@@ -1,0 +1,16 @@
+{
+  "replace": false,
+  "values": [
+    "hat:tophat",
+    "hat:ushanka",
+
+    "hat:lab_goggles",
+
+    "hat:armorerhat",
+    "hat:butcherhat",
+    "hat:farmerhat",
+    "hat:fisherhat",
+    "hat:fletcherhat"
+
+  ]
+}

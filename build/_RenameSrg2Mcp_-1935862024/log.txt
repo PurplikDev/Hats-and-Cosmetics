@@ -1,0 +1,15 @@
+Java Launcher: C:\Program Files\Java\jdk-17.0.2\bin\java.exe
+Arguments: '--task, SRG_TO_MCP, --input, C:\Users\spravce\.gradle\caches\modules-2\files-2.1\top.theillusivec4.curios\curios-forge\1.18.2-5.0.6.3\506789e1855353852334b9762b97dd4620dcff4a\curios-forge-1.18.2-5.0.6.3-api.jar, --output, C:\Users\spravce\.gradle\caches\forge_gradle\deobf_dependencies\top\theillusivec4\curios\curios-forge\1.18.2-5.0.6.3_mapped_parchment_2022.03.13-1.18.2\curios-forge-1.18.2-5.0.6.3_mapped_parchment_2022.03.13-1.18.2-api.jar, --mcp, C:\Users\spravce\.gradle\caches\parchmentgradle\org\parchmentmc\data\parchment-1.18.2\2022.03.13\parchment-1.18.2-2022.03.13.zip, --strip-signatures'
+Classpath:
+ - C:\Users\spravce\.gradle\caches\forge_gradle\maven_downloader\net\minecraftforge\installertools\1.2.8\installertools-1.2.8-fatjar.jar
+Working directory: D:\Mod Dev\1-18-1\Cometic Mod\build\_RenameSrg2Mcp_-1935862024
+Main class: net.minecraftforge.installertools.ConsoleTool
+====================================
+Task: SRG_TO_MCP
+Input:  C:\Users\spravce\.gradle\caches\modules-2\files-2.1\top.theillusivec4.curios\curios-forge\1.18.2-5.0.6.3\506789e1855353852334b9762b97dd4620dcff4a\curios-forge-1.18.2-5.0.6.3-api.jar
+Output: C:\Users\spravce\.gradle\caches\forge_gradle\deobf_dependencies\top\theillusivec4\curios\curios-forge\1.18.2-5.0.6.3_mapped_parchment_2022.03.13-1.18.2\curios-forge-1.18.2-5.0.6.3_mapped_parchment_2022.03.13-1.18.2-api.jar
+MCP:    C:\Users\spravce\.gradle\caches\parchmentgradle\org\parchmentmc\data\parchment-1.18.2\2022.03.13\parchment-1.18.2-2022.03.13.zip
+Loading MCP Data
+Processing ZIP file
+Stripped Manifest of sha digests
+Process complete

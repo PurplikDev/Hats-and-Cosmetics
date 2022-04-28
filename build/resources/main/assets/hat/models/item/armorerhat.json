@@ -1,0 +1,67 @@
+{
+	"parent": "hat_template",
+	"texture_size": [64, 64],
+	"textures": {
+		"1": "entity/villager/profession/armorer"
+	},
+	"elements": [
+		{
+			"from": [3.75, 1.5, 3.75],
+			"to": [12.25, 10, 12.25],
+			"faces": {
+				"north": {"uv": [10, 2, 12, 4], "texture": "#1"},
+				"east": {"uv": [8, 2, 10, 4], "texture": "#1"},
+				"south": {"uv": [14, 2, 16, 4], "texture": "#1"},
+				"west": {"uv": [12, 2, 14, 4], "texture": "#1"},
+				"up": {"uv": [12, 2, 10, 0], "texture": "#1"},
+				"down": {"uv": [14, 0, 12, 2], "texture": "#1"}
+			}
+		},
+		{
+			"from": [4, 2, 4],
+			"to": [12, 10, 12],
+			"faces": {
+				"north": {"uv": [2, 2, 4, 4], "texture": "#1"},
+				"east": {"uv": [0, 2, 2, 4], "texture": "#1"},
+				"south": {"uv": [6, 2, 8, 4], "texture": "#1"},
+				"west": {"uv": [4, 2, 6, 4], "texture": "#1"},
+				"up": {"uv": [4, 2, 2, 0], "texture": "#1"},
+				"down": {"uv": [6, 0, 4, 2], "texture": "#1"}
+			}
+		},
+		{
+			"from": [0, 6, 0],
+			"to": [16, 6, 16],
+			"faces": {
+				"north": {"uv": [7.75, 16, 11.75, 16], "texture": "#1"},
+				"east": {"uv": [3.75, 16, 7.75, 16], "texture": "#1"},
+				"south": {"uv": [15.75, 16, 19.75, 16], "texture": "#1"},
+				"west": {"uv": [11.75, 16, 15.75, 16], "texture": "#1"},
+				"up": {"uv": [11.75, 16, 7.75, 12], "texture": "#1"},
+				"down": {"uv": [15.75, 12, 11.75, 16], "texture": "#1"}
+			}
+		}
+	],
+	"display": {
+		"gui": {
+		    "rotation": [ 30, -45, 0 ],
+		    "translation": [ 0, 1, 0 ],
+		    "scale": [ 0.8, 0.8, 0.8 ]
+		},
+		"fixed": {
+		    "rotation": [ 0, 180, 0 ],
+		    "translation": [ 0, 4, 0],
+		    "scale":[ 1, 1, 1 ]
+		},
+		"ground": {
+		    "rotation": [ 0, 0, 0 ],
+		    "translation": [ 0, 3, 0 ],
+		    "scale": [ 0.5, 0.5, 0.5 ]
+		},
+		"thirdperson_righthand": {
+		    "rotation": [ 45, 45, 0 ],
+		    "translation": [ 0, 3, 0 ],
+		    "scale": [ 0.5, 0.5, 0.5 ]
+		}
+	  }
+}

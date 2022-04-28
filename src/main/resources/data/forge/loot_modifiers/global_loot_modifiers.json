@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "entries": [
+    "hat:top_hat_in_dungeon",
+    "hat:ushanka_in_dungeon",
+
+    "hat:labcoat_in_ship",
+    "hat:labgoggles_in_ship"
+  ]
+}
