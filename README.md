@@ -1,2 +1,4 @@
 # Hats-and-Cosmetics
- Repo for my mod Hats & Cosmetics
+ Repository for my mod Hats & Cosmetics
+ 
+This mods aims to add wearable and fasionable hats to Minecraft.
