@@ -1,9 +1,0 @@
-Manifest-Version: 1.0
-Specification-Title: hat
-Specification-Vendor: hatsareus
-Specification-Version: 1
-Implementation-Title: Cometic Mod
-Implementation-Version: 0.2
-Implementation-Vendor: hatsareus
-Implementation-Timestamp: 2022-04-22T22:00:59+0200
-
