@@ -1,8 +1,9 @@
 package com.purplik.hat;
 
-import com.purplik.hat.item.rare.Labcoat;
-import com.purplik.hat.item.rare.Labgoggles;
-import com.purplik.hat.item.villagerhats.*;
+import com.purplik.hat.item.legendary.Gup;
+import com.purplik.hat.item.rare.*;
+import com.purplik.hat.item.uncommon.EngineersHat;
+import com.purplik.hat.item.uncommon.villagerhats.*;
 import com.purplik.hat.item.legendary.Tophat;
 import com.purplik.hat.item.legendary.Ushanka;
 import net.minecraft.world.item.Item;
@@ -26,13 +27,18 @@ public class Registry {
 
     public static final RegistryObject<Item> USHANKA = ITEMS.register("ushanka", () -> new Ushanka(new Item.Properties().rarity(Rarity.EPIC)));
     public static final RegistryObject<Item> TOPHAT = ITEMS.register("tophat", () -> new Tophat(new Item.Properties().rarity(Rarity.EPIC)));
+    public static final RegistryObject<Item> GUP = ITEMS.register("gup", () -> new Gup(new Item.Properties().rarity(Rarity.EPIC)));
 
 
 
     //RARE HATS
 
-    public static final RegistryObject<Item> LAB_COAT = ITEMS.register("lab_coat", () -> new Labcoat(new Item.Properties().rarity(Rarity.RARE)));
+    public static final RegistryObject<Item> LABCOAT = ITEMS.register("labcoat", () -> new Labcoat(new Item.Properties().rarity(Rarity.RARE)));
     public static final RegistryObject<Item> LAB_GOGGLES = ITEMS.register("lab_goggles", () -> new Labgoggles(new Item.Properties().rarity(Rarity.RARE)));
+
+    public static final RegistryObject<Item> GOGGLES_OF_THAUMATURGY = ITEMS.register("goggles_of_thaumaturgy", () -> new GogglesOfThaumaturgy(new Item.Properties().rarity(Rarity.RARE)));
+    public static final RegistryObject<Item> BANDITS_HAT = ITEMS.register("bandits_hat", () -> new BanditsHat(new Item.Properties().rarity(Rarity.RARE)));
+    // public static final RegistryObject<Item> CAPTAINS_HAT = ITEMS.register("captains_hat", () -> new CaptainsHat(new Item.Properties().rarity(Rarity.RARE)));
 
     //Ideas: Some glasses/goggles?
     //Definitely TF2 Hats
@@ -53,6 +59,7 @@ public class Registry {
     public static final RegistryObject<Item> FISHERHAT = ITEMS.register("fisherhat", () -> new FisherHat(new Item.Properties().rarity(Rarity.UNCOMMON)));
     public static final RegistryObject<Item> FLETCHERHAT = ITEMS.register("fletcherhat", () -> new FletcherHat(new Item.Properties().rarity(Rarity.UNCOMMON)));
 
+    public static final RegistryObject<Item> ENGINEERS_HAT = ITEMS.register("engineers_hat", () -> new EngineersHat(new Item.Properties().rarity(Rarity.UNCOMMON)));
 
     //////////////////////////////
 

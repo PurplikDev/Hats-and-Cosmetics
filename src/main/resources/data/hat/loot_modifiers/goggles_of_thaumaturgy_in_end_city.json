@@ -1,0 +1,10 @@
+{
+  "conditions" : [
+    {
+      "condition": "forge:loot_table_id",
+      "loot_table_id": "minecraft:chests/end_city_treasure"
+    }
+  ],
+  "addition": "hat:goggles_of_thaumaturgy",
+  "type": "hat:rare_hat_loot"
+}

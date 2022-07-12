@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "hat:lab_coat"
+    "hat:labcoat",
+    "hat:gup"
   ]
 }
