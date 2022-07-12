@@ -1,20 +1,20 @@
+/*
 package com.purplik.hat.loot;
 
 import com.google.gson.JsonObject;
+import it.unimi.dsi.fastutil.objects.ObjectArrayList;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.util.GsonHelper;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.storage.loot.LootContext;
 import net.minecraft.world.level.storage.loot.predicates.LootItemCondition;
-import net.minecraftforge.common.loot.GlobalLootModifierSerializer;
 import net.minecraftforge.common.loot.LootModifier;
 import net.minecraftforge.registries.ForgeRegistries;
-import org.jetbrains.annotations.NotNull;
 
-import java.util.List;
+import javax.annotation.Nonnull;
 
-public class LegendaryHatLoot extends LootModifier {
+public abstract class LegendaryHatLoot extends LootModifier {
 
     private final Item addition;
 
@@ -23,9 +23,9 @@ public class LegendaryHatLoot extends LootModifier {
         this.addition = addition;
     }
 
-    @NotNull
+    @Nonnull
     @Override
-    protected List<ItemStack> doApply(List<ItemStack> generatedLoot, LootContext context) {
+    protected ObjectArrayList<ItemStack> doApply(ObjectArrayList<ItemStack> generatedLoot, LootContext context) {
         if(context.getRandom().nextFloat() > 0.9) {
             generatedLoot.add(new ItemStack(addition, 1));
         }
@@ -36,19 +36,19 @@ public class LegendaryHatLoot extends LootModifier {
     public static class Serializer extends GlobalLootModifierSerializer<LegendaryHatLoot> {
 
         @Override
-        public LegendaryHatLoot read(ResourceLocation location, JsonObject object, LootItemCondition[] ailootcondition) {
+        public LegendaryHatLoot read(ResourceLocation name, JsonObject object,
+                                                      LootItemCondition[] conditionsIn) {
             Item addition = ForgeRegistries.ITEMS.getValue(
                     new ResourceLocation(GsonHelper.getAsString(object, "addition")));
-
-            return new LegendaryHatLoot(ailootcondition, addition);
+            return new LegendaryHatLoot(conditionsIn, addition);
         }
 
         @Override
         public JsonObject write(LegendaryHatLoot instance) {
             JsonObject json = makeConditions(instance.conditions);
             json.addProperty("addition", ForgeRegistries.ITEMS.getKey(instance.addition).toString());
-
             return json;
         }
     }
 }
+*/

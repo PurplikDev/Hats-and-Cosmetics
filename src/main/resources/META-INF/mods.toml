@@ -55,7 +55,7 @@ A mod that adds cosmetics I guess.
     modId="minecraft"
     mandatory=true
 # This version range declares a minimum of the current minecraft version up to but not including the next major version
-    versionRange="[1.18.1,1.19)"
+    versionRange="[1.18.1,1.20)"
     ordering="NONE"
     side="BOTH"
 
@@ -63,4 +63,4 @@ A mod that adds cosmetics I guess.
     modId="curios"
     mandatory=true
 # This version range declares a minimum of the current minecraft version up to but not including the next major version
-    versionRange="[1.18.2-5.0.6.3,)"
+    versionRange="[1.19-5.1.0.4,)"

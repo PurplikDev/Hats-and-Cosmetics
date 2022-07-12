@@ -1,6 +1,8 @@
+/*
 package com.purplik.hat.loot;
 
 import com.google.gson.JsonObject;
+import it.unimi.dsi.fastutil.objects.ObjectArrayList;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.util.GsonHelper;
 import net.minecraft.world.item.Item;
@@ -25,7 +27,7 @@ public class RareHatLoot extends LootModifier {
 
     @NotNull
     @Override
-    protected List<ItemStack> doApply(List<ItemStack> generatedLoot, LootContext context) {
+    protected ObjectArrayList<ItemStack> doApply(ObjectArrayList<ItemStack> generatedLoot, LootContext context) {
         if(context.getRandom().nextFloat() > 0.5) {
             generatedLoot.add(new ItemStack(addition, 1));
         }
@@ -35,7 +37,6 @@ public class RareHatLoot extends LootModifier {
 
     public static class Serializer extends GlobalLootModifierSerializer<RareHatLoot> {
 
-        @Override
         public RareHatLoot read(ResourceLocation location, JsonObject object, LootItemCondition[] ailootcondition) {
             Item addition = ForgeRegistries.ITEMS.getValue(
                     new ResourceLocation(GsonHelper.getAsString(object, "addition")));
@@ -43,7 +44,6 @@ public class RareHatLoot extends LootModifier {
             return new RareHatLoot(ailootcondition, addition);
         }
 
-        @Override
         public JsonObject write(RareHatLoot instance) {
             JsonObject json = makeConditions(instance.conditions);
             json.addProperty("addition", ForgeRegistries.ITEMS.getKey(instance.addition).toString());
@@ -52,3 +52,4 @@ public class RareHatLoot extends LootModifier {
         }
     }
 }
+*/

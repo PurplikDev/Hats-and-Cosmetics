@@ -1,6 +1,5 @@
 package com.purplik.hat;
 
-import com.purplik.hat.item.legendary.Gup;
 import com.purplik.hat.model.legendarymodels.GupModel;
 import com.purplik.hat.model.legendarymodels.TophatModel;
 import com.purplik.hat.model.legendarymodels.UshankaModel;
@@ -11,6 +10,8 @@ import com.purplik.hat.renderer.legendaryrenderer.GupRenderer;
 import com.purplik.hat.renderer.legendaryrenderer.TophatRenderer;
 import com.purplik.hat.renderer.legendaryrenderer.UshankaRenderer;
 import com.purplik.hat.renderer.rarerenderer.*;
+import com.purplik.hat.renderer.uncommonrenderer.EngineersHatRenderer;
+import com.purplik.hat.renderer.uncommonrenderer.VillagerHatRenderer;
 import net.minecraftforge.client.event.EntityRenderersEvent;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;

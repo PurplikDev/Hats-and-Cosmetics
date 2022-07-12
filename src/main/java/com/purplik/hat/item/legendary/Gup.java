@@ -2,7 +2,6 @@ package com.purplik.hat.item.legendary;
 
 import com.purplik.hat.HatTab;
 import net.minecraft.network.chat.Component;
-import net.minecraft.network.chat.TranslatableComponent;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.TooltipFlag;
@@ -19,7 +18,7 @@ public class Gup extends Item {
 
     @Override
     public void appendHoverText(ItemStack pStack, @Nullable Level pLevel, List<Component> pTooltipComponents, TooltipFlag pIsAdvanced) {
-        pTooltipComponents.add(new TranslatableComponent("tooltip.hat.gup.tooltip"));
-        pTooltipComponents.add(new TranslatableComponent("tooltip.hat.legendary.tooltip"));
+        pTooltipComponents.add(Component.translatable("tooltip.hat.gup.tooltip"));
+        pTooltipComponents.add(Component.translatable("tooltip.hat.legendary.tooltip"));
     }
 }

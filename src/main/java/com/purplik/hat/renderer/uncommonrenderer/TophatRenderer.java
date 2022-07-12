@@ -1,9 +1,10 @@
-package com.purplik.hat.renderer;
+package com.purplik.hat.renderer.uncommonrenderer;
 
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.vertex.VertexConsumer;
 import com.purplik.hat.Hat;
-import com.purplik.hat.model.EngineersHatModel;
+import com.purplik.hat.renderer.CosmeticLayerDefinitions;
+import com.purplik.hat.renderer.model.TophatModel;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.model.EntityModel;
 import net.minecraft.client.renderer.MultiBufferSource;
@@ -17,15 +18,15 @@ import net.minecraft.world.item.ItemStack;
 import top.theillusivec4.curios.api.SlotContext;
 import top.theillusivec4.curios.api.client.ICurioRenderer;
 
-public class EngineersHatRenderer<L extends LivingEntity> implements ICurioRenderer {
+public class TophatRenderer<L extends LivingEntity> implements ICurioRenderer {
 
-    private static final ResourceLocation ENGINEERS_HAT_TEXTURE = new ResourceLocation(Hat.MOD_ID,
-            "textures/cosmetics/engineers_hat.png");
+    private static final ResourceLocation TOPHAT_TEXTURE = new ResourceLocation(Hat.MOD_ID,
+            "textures/cosmetics/tophat.png");
 
-    private final EngineersHatModel model;
+    private final TophatModel model;
 
-    public EngineersHatRenderer() {
-        this.model = new EngineersHatModel(Minecraft.getInstance().getEntityModels().bakeLayer(CosmeticLayerDefinitions.ENGINEERS_HAT));
+    public TophatRenderer() {
+        this.model = new TophatModel(Minecraft.getInstance().getEntityModels().bakeLayer(CosmeticLayerDefinitions.TOPHAT));
     }
 
     @Override
@@ -48,7 +49,7 @@ public class EngineersHatRenderer<L extends LivingEntity> implements ICurioRende
         this.model.setupAnim(entity, limbSwing, limbSwingAmount, ageInTicks, netHeadYaw, headPitch);
         ICurioRenderer.followBodyRotations(entity, this.model);
         VertexConsumer vertexconsumer = ItemRenderer
-                .getArmorFoilBuffer(multiBufferSource, RenderType.armorCutoutNoCull(ENGINEERS_HAT_TEXTURE), false,
+                .getArmorFoilBuffer(multiBufferSource, RenderType.armorCutoutNoCull(TOPHAT_TEXTURE), false,
                         itemStack.hasFoil());
         this.model
                 .renderToBuffer(poseStack, vertexconsumer, light, OverlayTexture.NO_OVERLAY, 1.0F, 1.0F,

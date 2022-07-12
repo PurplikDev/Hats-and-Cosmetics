@@ -2,7 +2,6 @@ package com.purplik.hat.item.rare;
 
 import com.purplik.hat.HatTab;
 import net.minecraft.network.chat.Component;
-import net.minecraft.network.chat.TranslatableComponent;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.TooltipFlag;
@@ -19,8 +18,8 @@ public class GogglesOfThaumaturgy extends Item {
 
     @Override
     public void appendHoverText(ItemStack pStack, @Nullable Level pLevel, List<Component> pTooltipComponents, TooltipFlag pIsAdvanced) {
-        pTooltipComponents.add(new TranslatableComponent("tooltip.hat.goggles_of_thaumaturgy.tooltip"));
-        pTooltipComponents.add(new TranslatableComponent("tooltip.hat.rare.tooltip"));
+        pTooltipComponents.add(Component.translatable("tooltip.hat.goggles_of_thaumaturgy.tooltip"));
+        pTooltipComponents.add(Component.translatable("tooltip.hat.rare.tooltip"));
     }
 
 }
