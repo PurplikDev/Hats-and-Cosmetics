@@ -1,10 +1,11 @@
-package com.purplik.hat.renderer.uncommonrenderer;
+package com.purplik.hat.renderer.rarerenderer;
 
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.vertex.VertexConsumer;
 import com.purplik.hat.Hat;
+import com.purplik.hat.model.raremodels.GogglesOfThaumaturgy2Model;
+import com.purplik.hat.model.raremodels.GogglesOfThaumaturgyModel;
 import com.purplik.hat.renderer.CosmeticLayerDefinitions;
-import com.purplik.hat.renderer.model.TophatModel;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.model.EntityModel;
 import net.minecraft.client.renderer.MultiBufferSource;
@@ -18,15 +19,15 @@ import net.minecraft.world.item.ItemStack;
 import top.theillusivec4.curios.api.SlotContext;
 import top.theillusivec4.curios.api.client.ICurioRenderer;
 
-public class TophatRenderer<L extends LivingEntity> implements ICurioRenderer {
+public class GogglesOfThaumaturgy2Renderer<L extends LivingEntity> implements ICurioRenderer {
 
-    private static final ResourceLocation TOPHAT_TEXTURE = new ResourceLocation(Hat.MOD_ID,
-            "textures/cosmetics/tophat.png");
+    private static final ResourceLocation GOGGLES_OF_THAUMATURGY_TEXTURE = new ResourceLocation(Hat.MOD_ID,
+            "textures/cosmetics/goggles_of_thaumaturgy_style_2.png");
 
-    private final TophatModel model;
+    private final GogglesOfThaumaturgy2Model model;
 
-    public TophatRenderer() {
-        this.model = new TophatModel(Minecraft.getInstance().getEntityModels().bakeLayer(CosmeticLayerDefinitions.TOPHAT));
+    public GogglesOfThaumaturgy2Renderer() {
+        this.model = new GogglesOfThaumaturgy2Model(Minecraft.getInstance().getEntityModels().bakeLayer(CosmeticLayerDefinitions.GOGGLES_OF_THAUMATURGY_2));
     }
 
     @Override
@@ -49,7 +50,7 @@ public class TophatRenderer<L extends LivingEntity> implements ICurioRenderer {
         this.model.setupAnim(entity, limbSwing, limbSwingAmount, ageInTicks, netHeadYaw, headPitch);
         ICurioRenderer.followBodyRotations(entity, this.model);
         VertexConsumer vertexconsumer = ItemRenderer
-                .getArmorFoilBuffer(multiBufferSource, RenderType.armorCutoutNoCull(TOPHAT_TEXTURE), false,
+                .getArmorFoilBuffer(multiBufferSource, RenderType.armorCutoutNoCull(GOGGLES_OF_THAUMATURGY_TEXTURE), false,
                         itemStack.hasFoil());
         this.model
                 .renderToBuffer(poseStack, vertexconsumer, light, OverlayTexture.NO_OVERLAY, 1.0F, 1.0F,

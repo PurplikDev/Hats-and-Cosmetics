@@ -4,14 +4,18 @@ import com.purplik.hat.model.legendarymodels.GupModel;
 import com.purplik.hat.model.legendarymodels.TophatModel;
 import com.purplik.hat.model.legendarymodels.UshankaModel;
 import com.purplik.hat.model.raremodels.*;
+import com.purplik.hat.model.uncommonmodels.EngineersHatModel;
+import com.purplik.hat.model.uncommonmodels.MonocleModel;
+import com.purplik.hat.model.uncommonmodels.VillagerHatTemplate;
 import com.purplik.hat.renderer.*;
-import com.purplik.hat.model.*;
 import com.purplik.hat.renderer.legendaryrenderer.GupRenderer;
 import com.purplik.hat.renderer.legendaryrenderer.TophatRenderer;
 import com.purplik.hat.renderer.legendaryrenderer.UshankaRenderer;
 import com.purplik.hat.renderer.rarerenderer.*;
 import com.purplik.hat.renderer.uncommonrenderer.EngineersHatRenderer;
+import com.purplik.hat.renderer.uncommonrenderer.MonocleRenderer;
 import com.purplik.hat.renderer.uncommonrenderer.VillagerHatRenderer;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraftforge.client.event.EntityRenderersEvent;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -51,8 +55,8 @@ public class Hat
         CuriosRendererRegistry.register(Registry.LABCOAT.get(), LabcoatRenderer::new);
         CuriosRendererRegistry.register(Registry.LAB_GOGGLES.get(), LabgogglesRenderer::new);
         CuriosRendererRegistry.register(Registry.GOGGLES_OF_THAUMATURGY.get(), GogglesOfThaumaturgyRenderer::new);
+        CuriosRendererRegistry.register(Registry.GOGGLES_OF_THAUMATURGY_STYLE_2.get(), GogglesOfThaumaturgy2Renderer::new);
         CuriosRendererRegistry.register(Registry.BANDITS_HAT.get(), BanditsHatRenderer::new);
-        //CuriosRendererRegistry.register(Registry.CAPTAINS_HAT.get(), CaptainsHatRenderer::new);
 
         CuriosRendererRegistry.register(Registry.ARMORERHAT.get(), () -> new VillagerHatRenderer("armorer"));
         CuriosRendererRegistry.register(Registry.BUTCHERHAT.get(), () -> new VillagerHatRenderer("butcher"));
@@ -61,6 +65,7 @@ public class Hat
         CuriosRendererRegistry.register(Registry.FLETCHERHAT.get(), () -> new VillagerHatRenderer("fletcher"));
 
         CuriosRendererRegistry.register(Registry.ENGINEERS_HAT.get(), EngineersHatRenderer::new);
+        CuriosRendererRegistry.register(Registry.MONOCLE.get(), MonocleRenderer::new);
     }
 
     public void enqueueIMC(final InterModEnqueueEvent event) {
@@ -69,11 +74,8 @@ public class Hat
 
         for (SlotTypePreset slotType : slotTypes) {
             InterModComms.sendTo(CuriosApi.MODID, SlotTypeMessage.REGISTER_TYPE, () -> slotType.getMessageBuilder().build());
+            InterModComms.sendTo(CuriosApi.MODID, SlotTypeMessage.REGISTER_TYPE, () -> new SlotTypeMessage.Builder("accessory").priority(220).icon(new ResourceLocation("curios:slot/accessory")).build());
         }
-
-        /*
-        InterModComms.sendTo(CuriosApi.MODID, SlotTypeMessage.REGISTER_TYPE, () -> new SlotTypeMessage.Builder("accessory").priority(220).build());
-        */
     }
 
     private void registerLayers(final EntityRenderersEvent.RegisterLayerDefinitions event) {
@@ -84,12 +86,14 @@ public class Hat
         event.registerLayerDefinition(CosmeticLayerDefinitions.LABCOAT, LabcoatModel::createLayer);
         event.registerLayerDefinition(CosmeticLayerDefinitions.LAB_GOGGLES, LabgogglesModel::createLayer);
         event.registerLayerDefinition(CosmeticLayerDefinitions.GOGGLES_OF_THAUMATURGY, GogglesOfThaumaturgyModel::createLayer);
+        event.registerLayerDefinition(CosmeticLayerDefinitions.GOGGLES_OF_THAUMATURGY_2, GogglesOfThaumaturgy2Model::createLayer);
         event.registerLayerDefinition(CosmeticLayerDefinitions.BANDITS_HAT, BanditsHatModel::createLayer);
         event.registerLayerDefinition(CosmeticLayerDefinitions.CAPTAINS_HAT, CaptainsHatModel::createLayer);
 
         event.registerLayerDefinition(CosmeticLayerDefinitions.VILLAGER_HAT, VillagerHatTemplate::createLayer);
 
         event.registerLayerDefinition(CosmeticLayerDefinitions.ENGINEERS_HAT, EngineersHatModel::createLayer);
+        event.registerLayerDefinition(CosmeticLayerDefinitions.MONOCLE, MonocleModel::createLayer);
 
     }
 }

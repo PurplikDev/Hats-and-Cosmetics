@@ -1,4 +1,4 @@
-package com.purplik.hat.model;
+package com.purplik.hat.model.uncommonmodels;
 
 import com.google.common.collect.ImmutableList;
 import net.minecraft.client.model.HumanoidModel;

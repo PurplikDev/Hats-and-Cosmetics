@@ -8,7 +8,9 @@ import net.minecraft.world.entity.npc.VillagerTrades;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.trading.MerchantOffer;
+import net.minecraftforge.common.BasicItemListing;
 import net.minecraftforge.event.village.VillagerTradesEvent;
+import net.minecraftforge.event.village.WandererTradesEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 
@@ -65,5 +67,21 @@ public class ModEvents {
                     stack,1,3,0.2F
             ));
         }
+    }
+
+    @SubscribeEvent
+    public static void registerWanderingTraderTrades(WandererTradesEvent event) {
+
+        event.getGenericTrades().add(new BasicItemListing(8, new ItemStack(Registry.ENGINEERS_HAT.get(), 1), 1, 1, 1));
+
+        event.getGenericTrades().add(new BasicItemListing(16, new ItemStack(Registry.BANDITS_HAT.get(), 1), 1, 1, 1));
+        event.getGenericTrades().add(new BasicItemListing(16, new ItemStack(Registry.GOGGLES_OF_THAUMATURGY.get(), 1), 1, 1, 1));
+        event.getGenericTrades().add(new BasicItemListing(16, new ItemStack(Registry.LABCOAT.get(), 1), 1, 1, 1));
+        event.getGenericTrades().add(new BasicItemListing(16, new ItemStack(Registry.LAB_GOGGLES.get(), 1), 1, 1, 1));
+
+        event.getRareTrades().add(new BasicItemListing(32, new ItemStack(Registry.GUP.get(), 1), 1, 1, 1));
+        event.getRareTrades().add(new BasicItemListing(32, new ItemStack(Registry.TOPHAT.get(), 1), 1, 1, 1));
+        event.getRareTrades().add(new BasicItemListing(32, new ItemStack(Registry.USHANKA.get(), 1), 1, 1, 1));
+
     }
 }

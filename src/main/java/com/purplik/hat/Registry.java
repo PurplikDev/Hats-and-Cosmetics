@@ -3,16 +3,20 @@ package com.purplik.hat;
 import com.purplik.hat.item.legendary.Gup;
 import com.purplik.hat.item.rare.*;
 import com.purplik.hat.item.uncommon.EngineersHat;
+import com.purplik.hat.item.uncommon.Monocle;
 import com.purplik.hat.item.uncommon.villagerhats.*;
 import com.purplik.hat.item.legendary.Tophat;
 import com.purplik.hat.item.legendary.Ushanka;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Rarity;
 import net.minecraft.world.level.block.Block;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
+
+import java.util.List;
 
 public class Registry {
 
@@ -30,15 +34,14 @@ public class Registry {
     public static final RegistryObject<Item> GUP = ITEMS.register("gup", () -> new Gup(new Item.Properties().rarity(Rarity.EPIC)));
 
 
-
     //RARE HATS
 
     public static final RegistryObject<Item> LABCOAT = ITEMS.register("labcoat", () -> new Labcoat(new Item.Properties().rarity(Rarity.RARE)));
     public static final RegistryObject<Item> LAB_GOGGLES = ITEMS.register("lab_goggles", () -> new Labgoggles(new Item.Properties().rarity(Rarity.RARE)));
 
     public static final RegistryObject<Item> GOGGLES_OF_THAUMATURGY = ITEMS.register("goggles_of_thaumaturgy", () -> new GogglesOfThaumaturgy(new Item.Properties().rarity(Rarity.RARE)));
+    public static final RegistryObject<Item> GOGGLES_OF_THAUMATURGY_STYLE_2 = ITEMS.register("goggles_of_thaumaturgy_2", () -> new GogglesOfThaumaturgy2(new Item.Properties().rarity(Rarity.RARE))); //THIS IS SO GOD DAMN AWFUL, WHY AM I DOING IT LIKE THIS? MAYBE BECAUSE I DON'T KNOW IF THERE IS A WAY TO RENDER A DIFFERENT MODEL DEPENDING ON THE SLOT
     public static final RegistryObject<Item> BANDITS_HAT = ITEMS.register("bandits_hat", () -> new BanditsHat(new Item.Properties().rarity(Rarity.RARE)));
-    // public static final RegistryObject<Item> CAPTAINS_HAT = ITEMS.register("captains_hat", () -> new CaptainsHat(new Item.Properties().rarity(Rarity.RARE)));
 
     //Ideas: Some glasses/goggles?
     //Definitely TF2 Hats
@@ -60,6 +63,7 @@ public class Registry {
     public static final RegistryObject<Item> FLETCHERHAT = ITEMS.register("fletcherhat", () -> new FletcherHat(new Item.Properties().rarity(Rarity.UNCOMMON)));
 
     public static final RegistryObject<Item> ENGINEERS_HAT = ITEMS.register("engineers_hat", () -> new EngineersHat(new Item.Properties().rarity(Rarity.UNCOMMON)));
+    public static final RegistryObject<Item> MONOCLE = ITEMS.register("monocle", () -> new Monocle(new Item.Properties().rarity(Rarity.UNCOMMON)));
 
     //////////////////////////////
 

@@ -13,6 +13,7 @@
   "item.hat.labcoat": "Labcoat",
   "item.hat.lab_goggles": "Lab Goggles",
   "item.hat.goggles_of_thaumaturgy": "Goggles of Thaumaturgy",
+  "item.hat.goggles_of_thaumaturgy_2": "Goggles of Thaumaturgy",
   "item.hat.bandits_hat": "Bandit's Hat",
 
   //UNCOMMON HATS NAMES
@@ -24,6 +25,7 @@
   "item.hat.fletcherhat": "Fletcher's Hat",
 
   "item.hat.engineers_hat": "Engineers's Hat",
+  "item.hat.monocle": "Monocle",
 
 
 
@@ -40,6 +42,7 @@
   "tooltip.hat.labcoat.tooltip": "§8Lab Coat without... pockets?!",
   "tooltip.hat.labgoggles.tooltip": "§8Not all Kings wear crowns",
   "tooltip.hat.goggles_of_thaumaturgy.tooltip": "§8Now in squid size!",
+  "tooltip.hat.goggles_of_thaumaturgy_2.tooltip": "§8Wait... there's two of them?!",
   "tooltip.hat.bandits_hat.tooltip": "§8..and so he left, grateful for his luck.",
 
   //UNCOMMON HATS TOOLTIPS
@@ -51,6 +54,7 @@
   "tooltip.hat.fletcher_hat.tooltip": "§8Sharpest hat for the sharpest arrows",
 
   "tooltip.hat.engineers_hat.tooltip": "§8And the BlueFlame was Eternal",
+  "tooltip.hat.monocle.tooltip": "§8Ohhh, fancy!",
 
   "tooltip.hat.ukulele.tooltip": "§8And his music was electric!",
 
@@ -66,5 +70,7 @@
 
   //TECHNICAL STUFF
 
-  "itemGroup.cosmetics_tab": "Hats & Cosmetics"
+  "itemGroup.cosmetics_tab": "Hats & Cosmetics",
+
+  "curios.identifier.accessory": "Accessory"
 }
