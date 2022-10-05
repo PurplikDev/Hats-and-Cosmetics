@@ -3,17 +3,15 @@
   "values": [
     "hat:tophat",
     "hat:ushanka",
-
     "hat:lab_goggles",
     "hat:goggles_of_thaumaturgy",
     "hat:bandits_hat",
-
     "hat:armorerhat",
     "hat:butcherhat",
     "hat:farmerhat",
     "hat:fisherhat",
     "hat:fletcherhat",
-
-    "hat:engineers_hat"
+    "hat:engineers_hat",
+    "hat:plague_hat"
   ]
 }

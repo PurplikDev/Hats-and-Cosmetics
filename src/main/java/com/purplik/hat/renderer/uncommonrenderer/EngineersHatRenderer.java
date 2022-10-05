@@ -3,7 +3,7 @@ package com.purplik.hat.renderer.uncommonrenderer;
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.vertex.VertexConsumer;
 import com.purplik.hat.Hat;
-import com.purplik.hat.model.uncommonmodels.EngineersHatModel;
+import com.purplik.hat.model.EngineersHatModel;
 import com.purplik.hat.renderer.CosmeticLayerDefinitions;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.model.EntityModel;

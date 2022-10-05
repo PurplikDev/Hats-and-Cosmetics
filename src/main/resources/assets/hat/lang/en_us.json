@@ -1,70 +1,48 @@
 {
-
-  //LEGENDARY HATS NAMES
+  //HATS
 
   "item.hat.ushanka": "Ushanka",
   "item.hat.tophat": "Top Hat",
   "item.hat.gup": "Shoulder Gup",
-
-
-
-  //RARE HATS NAMES
-
   "item.hat.labcoat": "Labcoat",
   "item.hat.lab_goggles": "Lab Goggles",
   "item.hat.goggles_of_thaumaturgy": "Goggles of Thaumaturgy",
   "item.hat.goggles_of_thaumaturgy_2": "Goggles of Thaumaturgy",
   "item.hat.bandits_hat": "Bandit's Hat",
-
-  //UNCOMMON HATS NAMES
-
   "item.hat.armorerhat": "Armorer's Goggles",
   "item.hat.butcherhat": "Butcher's Headband",
   "item.hat.farmerhat": "Farmer's Hat",
   "item.hat.fisherhat": "Fisherman's Hat",
   "item.hat.fletcherhat": "Fletcher's Hat",
-
   "item.hat.engineers_hat": "Engineers's Hat",
   "item.hat.monocle": "Monocle",
+  "item.hat.rat": "Rat Companion",
+  "item.hat.plague_mask": "Plague Doctor Mask",
+  "item.hat.plague_hat": "Plague Doctor Hat",
 
-
-
-  //LEGENDARY HATS TOOLTIPS
+  //TOOLTIPS
 
   "tooltip.hat.ushanka.tooltip": "§8To warm you in cold winter night",
   "tooltip.hat.tophat.tooltip": "§8Top Hat worn by Top people",
   "tooltip.hat.gup.tooltip": "§8It smells of sweet strawberries.",
-
-
-
-  //RARE HATS TOOLTIPS
-
   "tooltip.hat.labcoat.tooltip": "§8Lab Coat without... pockets?!",
-  "tooltip.hat.labgoggles.tooltip": "§8Not all Kings wear crowns",
+  "tooltip.hat.lab_goggles.tooltip": "§8Not all Kings wear crowns",
   "tooltip.hat.goggles_of_thaumaturgy.tooltip": "§8Now in squid size!",
   "tooltip.hat.goggles_of_thaumaturgy_2.tooltip": "§8Wait... there's two of them?!",
   "tooltip.hat.bandits_hat.tooltip": "§8..and so he left, grateful for his luck.",
-
-  //UNCOMMON HATS TOOLTIPS
-
-  "tooltip.hat.armorer_hat.tooltip": "§8To protect you from metal working",
-  "tooltip.hat.butcher_hat.tooltip": "§8Why do you even need this?",
-  "tooltip.hat.farmer_hat.tooltip": "§8Get out of my property you goddamn creeper!",
-  "tooltip.hat.fisher_hat.tooltip": "§8Fish come in three sizes: small, medium and the one that got away!",
-  "tooltip.hat.fletcher_hat.tooltip": "§8Sharpest hat for the sharpest arrows",
-
+  "tooltip.hat.armorerhat.tooltip": "§8To protect you from metal working",
+  "tooltip.hat.butcherhat.tooltip": "§8Why do you even need this?",
+  "tooltip.hat.farmerhat.tooltip": "§8Get out of my property you goddamn creeper!",
+  "tooltip.hat.fisherhat.tooltip": "§8Fish come in three sizes: small, medium and the one that got away!",
+  "tooltip.hat.fletcherhat.tooltip": "§8Sharpest hat for the sharpest arrows",
   "tooltip.hat.engineers_hat.tooltip": "§8And the BlueFlame was Eternal",
   "tooltip.hat.monocle.tooltip": "§8Ohhh, fancy!",
+  "tooltip.hat.rat.tooltip": "§8His name is John, but some people call him JZ",
+  "tooltip.hat.plague_mask.tooltip": "§8Just smell those herbs, aren't they lovely?",
+  "tooltip.hat.plague_hat.tooltip": "§8I might be a symbol of death, but I still look great",
 
   "tooltip.hat.ukulele.tooltip": "§8And his music was electric!",
 
-
-
-  //RARITY NAMES
-
-  "tooltip.hat.legendary.tooltip": "§dLegendary Cosmetic",
-  "tooltip.hat.rare.tooltip": "§bRare Cosmetic",
-  "tooltip.hat.uncommon.tooltip": "§eUncommon Cosmetic",
 
 
 

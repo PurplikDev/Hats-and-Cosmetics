@@ -67,6 +67,15 @@ public class ModEvents {
                     stack,1,3,0.2F
             ));
         }
+        if(event.getType() == VillagerProfession.CARTOGRAPHER) {
+            Int2ObjectMap<List<VillagerTrades.ItemListing>> trades = event.getTrades();
+            ItemStack stack = new ItemStack(Registry.MONOCLE.get(), 1);
+
+            trades.get(5).add((pTrader, pRand) -> new MerchantOffer(
+                    new ItemStack(Items.EMERALD, 32),
+                    stack,1,3,0.2F
+            ));
+        }
     }
 
     @SubscribeEvent
@@ -76,6 +85,7 @@ public class ModEvents {
 
         event.getGenericTrades().add(new BasicItemListing(16, new ItemStack(Registry.BANDITS_HAT.get(), 1), 1, 1, 1));
         event.getGenericTrades().add(new BasicItemListing(16, new ItemStack(Registry.GOGGLES_OF_THAUMATURGY.get(), 1), 1, 1, 1));
+        event.getGenericTrades().add(new BasicItemListing(16, new ItemStack(Registry.GOGGLES_OF_THAUMATURGY_STYLE_2.get(), 1), 1, 1, 1));
         event.getGenericTrades().add(new BasicItemListing(16, new ItemStack(Registry.LABCOAT.get(), 1), 1, 1, 1));
         event.getGenericTrades().add(new BasicItemListing(16, new ItemStack(Registry.LAB_GOGGLES.get(), 1), 1, 1, 1));
 
@@ -83,5 +93,8 @@ public class ModEvents {
         event.getRareTrades().add(new BasicItemListing(32, new ItemStack(Registry.TOPHAT.get(), 1), 1, 1, 1));
         event.getRareTrades().add(new BasicItemListing(32, new ItemStack(Registry.USHANKA.get(), 1), 1, 1, 1));
 
+        event.getRareTrades().add(new BasicItemListing(32, new ItemStack(Registry.RAT.get(), 1), 1, 1, 1));
+        event.getRareTrades().add(new BasicItemListing(32, new ItemStack(Registry.PLAGUE_HAT.get(), 1), 1, 1, 1));
+        event.getRareTrades().add(new BasicItemListing(32, new ItemStack(Registry.PLAGUE_MASK.get(), 1), 1, 1, 1));
     }
 }

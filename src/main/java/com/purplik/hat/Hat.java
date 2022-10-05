@@ -1,12 +1,12 @@
 package com.purplik.hat;
 
-import com.purplik.hat.model.legendarymodels.GupModel;
-import com.purplik.hat.model.legendarymodels.TophatModel;
-import com.purplik.hat.model.legendarymodels.UshankaModel;
-import com.purplik.hat.model.raremodels.*;
-import com.purplik.hat.model.uncommonmodels.EngineersHatModel;
-import com.purplik.hat.model.uncommonmodels.MonocleModel;
-import com.purplik.hat.model.uncommonmodels.VillagerHatTemplate;
+import com.purplik.hat.model.*;
+import com.purplik.hat.model.GupModel;
+import com.purplik.hat.model.TophatModel;
+import com.purplik.hat.model.UshankaModel;
+import com.purplik.hat.model.EngineersHatModel;
+import com.purplik.hat.model.MonocleModel;
+import com.purplik.hat.model.VillagerHatTemplate;
 import com.purplik.hat.renderer.*;
 import com.purplik.hat.renderer.legendaryrenderer.GupRenderer;
 import com.purplik.hat.renderer.legendaryrenderer.TophatRenderer;
@@ -38,7 +38,7 @@ public class Hat
     public Hat() {
         IEventBus eventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
-        Registry.register(eventBus);
+        Registry.ITEMS.register(eventBus);
 
         eventBus.addListener(this::setup);
         eventBus.addListener(this::enqueueIMC);
@@ -66,6 +66,9 @@ public class Hat
 
         CuriosRendererRegistry.register(Registry.ENGINEERS_HAT.get(), EngineersHatRenderer::new);
         CuriosRendererRegistry.register(Registry.MONOCLE.get(), MonocleRenderer::new);
+        CuriosRendererRegistry.register(Registry.RAT.get(), RatRenderer::new);
+        CuriosRendererRegistry.register(Registry.PLAGUE_MASK.get(), PlagueMaskRenderer::new);
+        CuriosRendererRegistry.register(Registry.PLAGUE_HAT.get(), PlagueHatRenderer::new);
     }
 
     public void enqueueIMC(final InterModEnqueueEvent event) {
@@ -94,6 +97,9 @@ public class Hat
 
         event.registerLayerDefinition(CosmeticLayerDefinitions.ENGINEERS_HAT, EngineersHatModel::createLayer);
         event.registerLayerDefinition(CosmeticLayerDefinitions.MONOCLE, MonocleModel::createLayer);
+        event.registerLayerDefinition(CosmeticLayerDefinitions.RAT, RatModel::createLayer);
+        event.registerLayerDefinition(CosmeticLayerDefinitions.PLAGUE_MASK, PlagueMaskModel::createLayer);
+        event.registerLayerDefinition(CosmeticLayerDefinitions.PLAGUE_HAT, PlagueHatModel::createLayer);
 
     }
 }

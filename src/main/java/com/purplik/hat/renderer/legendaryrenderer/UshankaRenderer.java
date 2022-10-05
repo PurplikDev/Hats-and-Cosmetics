@@ -3,7 +3,7 @@ package com.purplik.hat.renderer.legendaryrenderer;
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.vertex.VertexConsumer;
 import com.purplik.hat.Hat;
-import com.purplik.hat.model.legendarymodels.UshankaModel;
+import com.purplik.hat.model.UshankaModel;
 import com.purplik.hat.renderer.CosmeticLayerDefinitions;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.model.EntityModel;
