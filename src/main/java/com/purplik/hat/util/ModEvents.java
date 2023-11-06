@@ -88,6 +88,7 @@ public class ModEvents {
         event.getGenericTrades().add(new BasicItemListing(16, new ItemStack(Registry.GOGGLES_OF_THAUMATURGY_STYLE_2.get(), 1), 1, 1, 1));
         event.getGenericTrades().add(new BasicItemListing(16, new ItemStack(Registry.LABCOAT.get(), 1), 1, 1, 1));
         event.getGenericTrades().add(new BasicItemListing(16, new ItemStack(Registry.LAB_GOGGLES.get(), 1), 1, 1, 1));
+        event.getGenericTrades().add(new BasicItemListing(16, new ItemStack(Registry.BEANIE_POOF.get(), 1), 1, 1, 1));
 
         event.getRareTrades().add(new BasicItemListing(32, new ItemStack(Registry.GUP.get(), 1), 1, 1, 1));
         event.getRareTrades().add(new BasicItemListing(32, new ItemStack(Registry.TOPHAT.get(), 1), 1, 1, 1));

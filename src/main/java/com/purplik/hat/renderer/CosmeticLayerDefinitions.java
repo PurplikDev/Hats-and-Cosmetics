@@ -25,4 +25,7 @@ public class CosmeticLayerDefinitions {
     public static final ModelLayerLocation RAT = registerLayer("rat");
     public static final ModelLayerLocation PLAGUE_MASK = registerLayer("plague_mask");
     public static final ModelLayerLocation PLAGUE_HAT = registerLayer("plague_hat");
+    public static final ModelLayerLocation SHADES = registerLayer("shades");
+    public static final ModelLayerLocation POOF_BEANIE = registerLayer("poof_beanie");
+    public static final ModelLayerLocation SCARF = registerLayer("scarf");
 }

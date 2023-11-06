@@ -69,6 +69,11 @@ public class Hat
         CuriosRendererRegistry.register(Registry.RAT.get(), RatRenderer::new);
         CuriosRendererRegistry.register(Registry.PLAGUE_MASK.get(), PlagueMaskRenderer::new);
         CuriosRendererRegistry.register(Registry.PLAGUE_HAT.get(), PlagueHatRenderer::new);
+        //CuriosRendererRegistry.register(Registry.SHADES.get(), () -> new ShadesRenderer("shades"));
+        //CuriosRendererRegistry.register(Registry.RED_LAB_GOGGLES.get(), () -> new ShadesRenderer("red_lab_goggles"));
+        //CuriosRendererRegistry.register(Registry.ROUND_GLASSES.get(), () -> new ShadesRenderer("pandy_glasses"));
+        CuriosRendererRegistry.register(Registry.BEANIE_POOF.get(), () -> new PoofBeanieRenderer("beanie"));
+        CuriosRendererRegistry.register(Registry.SCARF.get(), () -> new ScarfRenderer("scarf"));
     }
 
     public void enqueueIMC(final InterModEnqueueEvent event) {
@@ -100,6 +105,8 @@ public class Hat
         event.registerLayerDefinition(CosmeticLayerDefinitions.RAT, RatModel::createLayer);
         event.registerLayerDefinition(CosmeticLayerDefinitions.PLAGUE_MASK, PlagueMaskModel::createLayer);
         event.registerLayerDefinition(CosmeticLayerDefinitions.PLAGUE_HAT, PlagueHatModel::createLayer);
-
+        //event.registerLayerDefinition(CosmeticLayerDefinitions.SHADES, ShadesModel::createLayer);
+        event.registerLayerDefinition(CosmeticLayerDefinitions.POOF_BEANIE, PoofBeanieModel::createLayer);
+        event.registerLayerDefinition(CosmeticLayerDefinitions.SCARF, ScarfModel::createLayer);
     }
 }

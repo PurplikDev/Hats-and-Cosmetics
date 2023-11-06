@@ -19,6 +19,9 @@
   "item.hat.rat": "Rat Companion",
   "item.hat.plague_mask": "Plague Doctor Mask",
   "item.hat.plague_hat": "Plague Doctor Hat",
+  "item.hat.scarf": "Scarf",
+  "item.hat.beanie_poof": "Beanie with a Poof",
+
 
   //TOOLTIPS
 
@@ -40,6 +43,8 @@
   "tooltip.hat.rat.tooltip": "§8His name is John, but some people call him JZ",
   "tooltip.hat.plague_mask.tooltip": "§8Just smell those herbs, aren't they lovely?",
   "tooltip.hat.plague_hat.tooltip": "§8I might be a symbol of death, but I still look great",
+  "tooltip.hat.beanie_with_a_poof.tooltip": "§8Perfect hat to enjoy the winter",
+  "tooltip.hat.scarf.tooltip": "§8I never knew how to proberly put these on",
 
   "tooltip.hat.ukulele.tooltip": "§8And his music was electric!",
 

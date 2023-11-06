@@ -45,6 +45,12 @@ public class Registry {
     public static final RegistryObject<Item> PLAGUE_MASK = ITEMS.register("plague_mask", () -> new HatItem(new Item.Properties(), "plague_mask"));
     public static final RegistryObject<Item> PLAGUE_HAT = ITEMS.register("plague_hat", () -> new HatItem(new Item.Properties(), "plague_hat"));
     public static final RegistryObject<Item> RAT = ITEMS.register("rat", () -> new HatItem(new Item.Properties(), "rat"));
+    //public static final RegistryObject<Item> SHADES = ITEMS.register("shades", () -> new HatItem(new Item.Properties(), "shades"));
+    //public static final RegistryObject<Item> RED_LAB_GOGGLES = ITEMS.register("red_lab_goggles", () -> new HatItem(new Item.Properties(), "shades"));
+    //public static final RegistryObject<Item> ROUND_GLASSES = ITEMS.register("round_glasses", () -> new HatItem(new Item.Properties(), "shades"));
+
+    public static final RegistryObject<Item> BEANIE_POOF = ITEMS.register("beanie_poof", () -> new HatItem(new Item.Properties(), "beanie_with_a_poof"));
+    public static final RegistryObject<Item> SCARF = ITEMS.register("scarf", () -> new HatItem(new Item.Properties(), "scarf"));
 
     //////////////////////////////
 }
